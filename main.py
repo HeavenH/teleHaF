@@ -40,6 +40,7 @@ def ranking(bot, update):
     """
         Retorno do request listando o top 10 de times.
     """
+    msg += 'Entreguem a Taça #FireShell++'
     msg += '\n1° - Time: ' + str(r['1']['nome']) + ' | Score: ' + str(r['1']['score']) + emojize(' :1st_place_medal:', use_aliases=True) #adding emoji gold
     msg += '\n2° - Time: ' + str(r['2']['nome']) + ' | Score: ' + str(r['2']['score']) + emojize(' :2nd_place_medal:', use_aliases=True) #adding emoji silver
     msg += '\n3° - Time: ' + str(r['3']['nome']) + ' | Score: ' + str(r['3']['score']) + emojize(' :3rd_place_medal:', use_aliases=True) #adding emoji bronze
