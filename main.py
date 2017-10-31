@@ -35,7 +35,7 @@ def start(bot, update):
 
 def ranking(bot, update):
     # Request via get para ler os dados, e decodificar o json
-    r = loads(get('https://hackaflag.com.br/premio_json.php').text)
+    r = loads(get('https://ctf.hackaflag.com.br/premio_json.php').text)
     msg = emojize("Ranking :black_flag:", use_aliases=True)
     """
         Retorno do request listando o top 10 de times.
